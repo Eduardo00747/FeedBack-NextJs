@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react';
+import Image from 'next/image';
 import styles from './styles/styles.module.css'; // Importando o arquivo CSS para estilização
 
 export default function Home() {
@@ -30,9 +31,12 @@ export default function Home() {
       {showContent && (
         <div className={styles.container}>
           <div className={styles.imageBorder}>
-            <img
+            <Image
               src="icon-star.svg" 
+              alt="Icon-star"
               className={styles.image}
+              width={50} // Defina o valor adequado para a largura da imagem
+              height={50} // Defina o valor adequado para a altura da imagem
             />
           </div>
           <h2> How did we do?</h2>
