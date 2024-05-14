@@ -57,9 +57,12 @@ export default function Home() {
       )}
       {message.trim() && (
         <div className={styles.showMessage}>
-          <img 
+          <Image 
             src="illustration-thank-you.svg"
+            alt="illustration-thank-you"            
             className={styles.image2}
+            width={50} // Defina o valor adequado para a largura da imagem
+            height={50} // Defina o valor adequado para a altura da imagem
           />
           <div className={styles.resultBorder}>
             <p>
@@ -70,7 +73,7 @@ export default function Home() {
             Thank you!
           </h2>
           <h3>
-            We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch 
+            We appreciate you taking the time to give a rating. If you ever need more support, don&apos;t hesitate to get in touch 
           </h3>      
         </div>
       )}
